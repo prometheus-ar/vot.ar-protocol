@@ -23,3 +23,49 @@ El dump de un voto se ve más o menos así:
 0000 0000 0000 0000 0000 0000 575f 4f4b
 ```
 
+El formato de los datos de un voto (que comienzan en el offset 0x8) es el
+siguiente:
+
+[longitud-distrito][distrito][tipo-candidato-N][id-candidato-N]
+
+Donde:
+
+* **longitud-distrito**. 2 bytes. Es la longitud del campo que sigue en formato
+String, y con un padding de "0" a la izquierda en caso de ser menor a 10.
+
+* **distrito**. Longitud variable. Nombre del distrito. Un distrito es la
+ubicación marcada como clase "Comuna" en el archivo de datos
+[Ubicaciones_1.json](src/test/resources/data/Ubicaciones_1.json).
+
+* **tipo-candidato-N**. 3 bytes. Es el campo cod_categoria definido para cada
+candidato en el archivo de datos [Candidatos.json](
+src/test/resources/data/CABA.1/Candidatos.json).
+
+* **id-candidato-N**. 4 bytes. Identificador del candidato. Es la parte del
+campo ```codigo``` que se encuentra después del punto separador de lista. De
+acuerdo al siguiente candidato:
+
+```
+  {
+    "asistida": null, 
+    "cod_categoria": "COM", 
+    "cod_lista": "16", 
+    "codigo": "16.5533", 
+    "nombre": "Clori Yelicic", 
+    "numero_de_orden": 2, 
+    "sexo": "F", 
+    "titular": true
+  }
+```
+
+el identificador es "5533". A este campo se le agrega un padding de 0s a la
+izquierda.
+
+Ejemplo de voto:
+
+```
+06CABA.1COM5533DIP5297JEF5292
+```
+
+Como se observa en el ejemplo, cada voto tiene tres candidatos, uno para
+comunero (COM), otro para legislador (DIP), y otro para jefe de gobierno (JEF).
