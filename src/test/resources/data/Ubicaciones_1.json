@@ -1,0 +1,37 @@
+[
+  {
+    "clase": "Distrito", 
+    "cod_datos": null, 
+    "codigo": "CABA", 
+    "descripcion": "Ciudad De Buenos Aires", 
+    "numero": null, 
+    "pin": "e0bebd22819993425814866b62701e2919ea26f1370499c1037b53b9d49c2c8a"
+  }, 
+  {
+    "clase": "Comuna", 
+    "cod_datos": null, 
+    "codigo": "CABA.1", 
+    "descripcion": "Comuna 1", 
+    "numero": null, 
+    "pin": "e0bebd22819993425814866b62701e2919ea26f1370499c1037b53b9d49c2c8a"
+  }, 
+  {
+    "clase": "Establecimiento", 
+    "cod_datos": null, 
+    "codigo": "CABA.1.1", 
+    "descripcion": "Instituto Vocacional De Arte", 
+    "numero": null, 
+    "pin": "e0bebd22819993425814866b62701e2919ea26f1370499c1037b53b9d49c2c8a"
+  }, 
+  {
+    "clase": "Mesa", 
+    "cod_datos": "CABA.1", 
+    "cod_partido": null, 
+    "codigo": "CABA.1.1.518", 
+    "descripcion": "518", 
+    "extranjera": false, 
+    "id_planilla": "73941", 
+    "numero": "518", 
+    "pin": "e0bebd22819993425814866b62701e2919ea26f1370499c1037b53b9d49c2c8a"
+  }
+]

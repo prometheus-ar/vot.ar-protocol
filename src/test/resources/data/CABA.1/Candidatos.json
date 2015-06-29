@@ -1,0 +1,33 @@
+[
+  {
+    "asistida": null, 
+    "cod_categoria": "COM", 
+    "cod_lista": "16", 
+    "codigo": "16.5533", 
+    "nombre": "Clori Yelicic", 
+    "numero_de_orden": 2, 
+    "sexo": "F", 
+    "titular": true
+  }, 
+  {
+    "asistida": null, 
+    "cod_categoria": "DIP", 
+    "cod_lista": "16", 
+    "codigo": "16.5297", 
+    "nombre": "Roy Cortina", 
+    "numero_de_orden": 1, 
+    "sexo": "M", 
+    "titular": true
+  },
+  {
+    "asistida": null, 
+    "cod_categoria": "JEF", 
+    "cod_lista": "81", 
+    "codigo": "81.5292", 
+    "nombre": "Luis Fernando Zamora", 
+    "numero_de_orden": 1, 
+    "sexo": "M", 
+    "titular": true
+  }
+]
+
